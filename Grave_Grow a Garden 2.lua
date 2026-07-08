@@ -1,12 +1,95 @@
-local v0=game:GetService("Players");local v1=game:GetService("ReplicatedStorage");local v2=game:GetService("Workspace");local v3=v0.LocalPlayer;local v4=loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))();local v5,v6,v7,v8=0.5 + 0 ,(3065.5 -(550 + 1130)) -(58 + 1045 + (694 -412)) ,0.5 + 0 + 0 ,(304 + 556) -((1699 -(261 + 624)) + (79 -34)) ;local v9,v10,v11=false,false,false;local v12,v13,v14=false,false,false;local v15={"Carrot","Strawberry","Blueberry"};local v16={};local v17={};local v18,v19,v20,v21,v22,v23;local v24,v25,v26;pcall(function() local v45=v1:WaitForChild("SharedModules");v18=require(v45:WaitForChild("Networking"));v19=v1.StockValues.SeedShop.Items;v20=v1.StockValues.GearShop.Items;v21=v1.StockValues.CrateShop.Items;v22=v2:WaitForChild("Gardens");v23=v1:WaitForChild("Night");v24=v18.SeedShop.PurchaseSeed;v25=v18.GearShop.PurchaseGear;v26=v18.CrateShop.PurchaseCrate;end);local v27;task.spawn(function() while  not v27 do local v75=0 -0 ;local v76;while true do if ((0 + 0)==v75) then v76=0 -0 ;while true do if (v76==(1747 -(760 + 987))) then task.wait(1 + (1913 -(1789 + 124)) );for v105,v106 in pairs(v22:GetChildren()) do if (v106:GetAttribute("Owner")==v3.Name) then v27=v106;break;end end break;end end break;end end end end);local function v28(v52,v53,v54) local v55=766 -(745 + 21) ;local v56;while true do if (v55==(0 + 0)) then v56=(0 -0) -(0 -0) ;while true do if (v56==(0 + 0 + 0 + 0)) then if ( not v52 or  not v53) then return;end for v92,v93 in pairs(v52:GetChildren()) do if ((v93.Value>((1055 -(87 + 968)) -(0 -0))) and table.find(v54,v93.Name)) then local v108=0 + 0 ;local v109;while true do if (v108==(0 -0)) then v109=0 -(1413 -(447 + 966)) ;while true do if (v109==(1080 -((2792 -1772) + (1877 -(1703 + 114))))) then pcall(function() v53:Fire(v93.Name);end);task.wait(1423.1 -((1331 -(376 + 325)) + 793) );break;end end break;end end end end break;end end break;end end end local function v29() local v57=0 -0 ;local v58;local v59;while true do if (v57==(2 -1)) then while true do if (v58==((1 + 1) -(2 -1))) then if  not v59 then return;end for v94,v95 in pairs(v59:GetChildren()) do local v96=v95:FindFirstChild("Fruits");if v96 then for v110,v111 in pairs(v96:GetChildren()) do local v112=0;while true do if (v112==(14 -(9 + 5))) then pcall(function() v18.Garden.CollectFruit:Fire(v95:GetAttribute("PlantId"),v111:GetAttribute("FruitId") or "" );end);task.wait((376.15 -(85 + 291)) -0 );break;end end end end end break;end if (v58==(0 + (1265 -(243 + 1022)))) then local v91=0 -0 ;while true do if (v91==0) then if  not v27 then return;end v59=v27:FindFirstChild("Plants");v91=1 + 0 ;end if (v91==(1181 -(1123 + 57))) then v58=(813 + 185) -((1169 -(163 + 91)) + (2012 -(1869 + 61))) ;break;end end end end break;end if (v57==(0 + 0)) then local v82=0 -0 ;while true do if (v82==(1 -0)) then v57=1 + 0 ;break;end if (v82==0) then v58=952 -(802 + 150) ;v59=nil;v82=1 -0 ;end end end end end local function v30() pcall(function() v18.NPCS.SellAll:Fire();end);end local function v31() if ( not v23 or  not v23.Value) then return;end local v60=v3.Character and v3.Character:FindFirstChild("HumanoidRootPart") ;if  not v60 then return;end for v77,v78 in pairs(v22:GetChildren()) do if ((v78~=v27) and v78:FindFirstChild("Plants")) then for v83,v84 in pairs(v78.Plants:GetChildren()) do local v85=0 + 0 ;local v86;local v87;local v88;local v89;while true do if (v85==1) then local v97=0;while true do if (v97==1) then v85=2;break;end if (v97==0) then v88=nil;v89=nil;v97=1475 -(1329 + 145) ;end end end if (v85==(971 -(140 + 831))) then local v98=1850 -(1409 + 441) ;while true do if (v98==0) then v86=0;v87=nil;v98=1;end if (v98==(719 -(15 + 703))) then v85=1 + 0 ;break;end end end if (v85==(440 -(262 + 176))) then while true do if (v86==((3468 -(345 + 1376)) -((1448 -(198 + 490)) + 987))) then v87,v88=v84:GetAttribute("UserId"),v84:GetAttribute("PlantId");v89=v84:FindFirstChildWhichIsA("BasePart");v86=2 -(4 -3) ;end if (v86==((2 -1) + (1206 -(696 + 510)))) then if (v87 and v88 and v89) then local v113=0 -0 ;local v114;local v115;while true do if (v113==(1263 -(1091 + 171))) then while true do local v117=0;while true do if (v117==(0 + 0)) then if (v114==((6 -4) -(0 -0))) then local v118=374 -(123 + 251) ;while true do if (v118==(4 -3)) then v114=(704 -(208 + 490)) -(1 + 2) ;break;end if (v118==(0 + 0)) then task.wait((2023.2 -(660 + 176)) -(129 + 940 + 118) );v60.CFrame=v115;v118=203 -(14 + 188) ;end end end if (((677 -(534 + 141)) -(1 + 0))==v114) then local v119=0 + 0 ;while true do if (v119==(1 + 0)) then v114=3 -1 ;break;end if (v119==(0 -0)) then task.wait((0.2 -0) -(0 -0) );pcall(function() local v123=0 + 0 ;local v124;while true do if (v123==0) then v124=0 + 0 + (396 -(115 + 281)) ;while true do if (((0 -0) + 0 + 0)==v124) then v18.Steal.BeginSteal:Fire(tonumber(v87),v88,"");v18.Steal.CompleteSteal:Fire();break;end end break;end end end);v119=2 -1 ;end end end v117=1;end if (v117==1) then if (v114==((3868 -2813) -((954 -(550 + 317)) + (1398 -430)))) then local v120=0 -0 ;while true do if (v120==1) then v114=2 -1 ;break;end if (v120==0) then v115=v60.CFrame;v60.CFrame=v89.CFrame + Vector3.new(0 -(285 -(134 + 151)) ,(1668 -(970 + 695)) + 0 ,(0 -0) + 0 ) ;v120=1991 -(582 + 1408) ;end end end if (v114==((20 -14) -(3 -0))) then return;end break;end end end break;end if (v113==(0 -0)) then local v116=1824 -(1195 + 629) ;while true do if (v116==1) then v113=1 -0 ;break;end if (v116==(241 -(187 + 54))) then v114=780 -(162 + 618) ;v115=nil;v116=1 + 0 ;end end end end end break;end end break;end end end end end end local v32,v33,v34={},{},{};pcall(function() local v61=0;local v62;while true do if (0==v61) then v62=(527 + 264) -(368 + 423) ;while true do if (v62==(0 -(0 -0))) then for v99,v100 in pairs(v19:GetChildren()) do table.insert(v32,v100.Name);end for v101,v102 in pairs(v20:GetChildren()) do table.insert(v33,v102.Name);end v62=19 -(10 + (13 -5)) ;end if (v62==((1 + 2) -2)) then for v103,v104 in pairs(v21:GetChildren()) do table.insert(v34,v104.Name);end break;end end break;end end end);local v35=v4:CreateWindow({Title="GROW A GARDEN 2 ||| OWNER GRAVE ☘️",Icon="leaf",Size=UDim2.fromOffset((2398 -(1373 + 263)) -((1416 -(451 + 549)) + 9 + 17) ,(1887 -674) -833 ),Theme="Dark",Config={Accent=Color3.fromRGB((1177 -476) -(376 + (1709 -(746 + 638))) ,278 -(41 + 67) ,(167 -57) + (486 -(218 + 123)) )}});local v36=v35:Tab({Title="Farm",Icon="zap"});v36:Toggle({Title="Auto Collect",Desc="Collect All",Callback=function(v63) v12=v63;end});v36:Toggle({Title="Auto Sell",Desc="Sell All",Callback=function(v64) v13=v64;end});v36:Toggle({Title="Auto Steal",Desc="Night time babyHahaha",Callback=function(v65) v14=v65;end});local v37=v35:Tab({Title="Shop",Icon="shopping-cart"});v37:Toggle({Title="Auto Buy Seeds",Callback=function(v66) v9=v66;end});v37:Dropdown({Title="Select",Multi=true,Values=v32,Default={"Carrot","Strawberry","Blueberry"},Callback=function(v67) v15=v67;end});v37:Toggle({Title="Auto Buy Gears",Callback=function(v68) v10=v68;end});v37:Dropdown({Title="Select",Multi=true,Values=v33,Callback=function(v69) v16=v69;end});v37:Toggle({Title="Auto Buy Crates",Callback=function(v70) v11=v70;end});v37:Dropdown({Title="Select",Multi=true,Values=v34,Callback=function(v71) v17=v71;end});task.spawn(function() while task.wait(v6) do if v12 then v29();end end end);task.spawn(function() while task.wait(v7) do if v13 then v30();end end end);task.spawn(function() while task.wait(v8) do if v14 then v31();end end end);task.spawn(function() while task.wait(v5) do local v79=438 -(21 + 124 + (853 -(306 + 254))) ;while true do if (v79==((0 + 0) -(0 -0))) then local v90=1467 -(899 + 568) ;while true do if (v90==0) then if (v9 and ( #v15>(430 -(44 + 254 + 132)))) then v28(v19,v24,v15);end if (v10 and ( #v16>((3595 -2109) -(998 + (1091 -(268 + 335)))))) then v28(v20,v25,v16);end v90=1;end if (v90==1) then v79=(291 -(60 + 230)) + (572 -(426 + 146)) ;break;end end end if (v79==(1 + 0 + (1456 -(282 + 1174)))) then if (v11 and ( #v17>(772 -((1012 -(569 + 242)) + 571)))) then v28(v21,v26,v17);end break;end end end end);local v38=v35:Tab({Title="Predictor",Icon="list"});local v39=v38:Paragraph({Title="Hasil Prediction",Desc="Click Refress"});local v40=v38:Section({Title="Log",Opened=true});local v41="";local function v42(v72) v41=v41   .. tostring(v72)   .. "\n" ;v39:SetDesc(v41);end local v43=print;print=v42;warn=v42;local v44=false;v38:Button({Title="Load Weather + Moon Predictor",Icon="download",Callback=function() if  not v44 then local v80=0;local v81;while true do if (v80==(0 -0)) then v81=0 + 0 ;while true do if (v81==(1025 -(706 + 318))) then task.spawn(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Lutosys/opensrc/refs/heads/main/gag2weatherpredictor.lua"))();end);v4:Notify({Title="Berhasil",Content="Script sudah jalan. Lihat di bagian Hasil",Duration=1141 -((1367 -(721 + 530)) + (2293 -(945 + 326))) });break;end if (v81==(0 -(0 -0))) then local v107=0 + 0 ;while true do if (v107==0) then v44=true;v42("Grave in Here");v107=701 -(271 + 429) ;end if (v107==1) then v81=1181 -(1032 + 91 + (1557 -(1408 + 92))) ;break;end end end end break;end end else v4:Notify({Title="Info",Content="Script sudah di load",Duration=(1088 -(461 + 625)) + (1288 -(993 + 295)) });end end});v38:Button({Title="Clear Log",Icon="trash",Callback=function() local v73=0 + 0 ;local v74;while true do if (v73==(1171 -(418 + 753))) then v74=0 + 0 ;while true do if (v74==(0 + 0)) then v41="";v39:SetDesc("Log dihapus...");break;end end break;end end end});print("Im behind you");
--- ⚠️ WARNING: integrity protected!
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
 
-]]--
+local a,b,c,d,e=game:GetService("Players"),game:GetService("ReplicatedStorage"),game:GetService("Workspace"),game:GetService("HttpService"),nil
+local f=a.LocalPlayer
+
+
+local g=loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
+
+
+local h,i,j,k=0.5,0.5,0.5,1
+local l,m,n=false,false,false
+local o,p,q=false,false,false
+local r={"Carrot","Strawberry","Blueberry"}
+local s,t={},{}
+
+
+local u,v,w,x,y,z
+local aa,ab,ac
+
+pcall(function()
+local ad=b:WaitForChild("SharedModules")
+u=require(ad:WaitForChild("Networking"))
+v=b.StockValues.SeedShop.Items
+w=b.StockValues.GearShop.Items
+x=b.StockValues.CrateShop.Items
+y=c:WaitForChild("Gardens")
+z=b:WaitForChild("Night")
+aa=u.SeedShop.PurchaseSeed
+ab=u.GearShop.PurchaseGear
+ac=u.CrateShop.PurchaseCrate
+end)
+
+
+local ae
+task.spawn(function()while not ae do task.wait(1)for af,ag in pairs(y:GetChildren())do if ag:GetAttribute("Owner")==f.Name then ae=ag break end)
+
+
+local function ah(ai,aj,ak)if not ai or not aj then return end for al,am in pairs(ai:GetChildren())do if am.Value>0 and table.find(ak,am.Name)then pcall(function()aj:Fire(am.Name)end)task.wait(0.1)end end
+
+
+local function an()if not ae then return end local ao=ae:FindFirstChild("Plants")if not ao then return end for ap,aq in pairs(ao:GetChildren())do local ar=aq:FindFirstChild("Fruits")if ar then for as,at in pairs(ar:GetChildren())do pcall(function()u.Garden.CollectFruit:Fire(aq:GetAttribute("PlantId"),at:GetAttribute("FruitId")or"")end)task.wait(0.15)end end
+
+
+local function au()pcall(function()u.NPCS.SellAll:Fire()end)end
+
+
+local function av()if not z.Value then return end local aw=f.Character and f.Character:FindFirstChild("HumanoidRootPart")if not aw then return end for ax,ay in pairs(y:GetChildren())do if ay~=ae and ay:FindFirstChild("Plants")then for az,ba in pairs(ay.Plants:GetChildren())do local bb,bc=ba:GetAttribute("UserId"),ba:GetAttribute("PlantId")local bd=ba:FindFirstChildWhichIsA("BasePart")if bb and bc and bd then local be=aw.CFrame aw.CFrame=bd.CFrame+Vector3.new(0,3,0)task.wait(0.2)pcall(function()u.Steal.BeginSteal:Fire(tonumber(bb),bc,"")u.Steal.CompleteSteal:Fire()end)task.wait(0.2)aw.CFrame=be return end
+
+
+local bf,bg,bh={},{} 
+pcall(function()for bi,bj in pairs(v:GetChildren())do table.insert(bf,bj.Name)end for bk,bl in pairs(w:GetChildren())do table.insert(bg,bl.Name)end for bm,bn in pairs(x:GetChildren())do table.insert(bh,bn.Name)end end)
+
+
+local bo="R1JPVyBBIEdBUkRFTiAyIHx8fCBPV05FUiBHUkFWRSDimqQ=
+local bp="bGVhZg==" 
+local bq="RGFyaw==" 
+local br=e:Base64Decode(bo)local bs=e:Base64Decode(bp)local bt=e:Base64Decode(bq)
+
+local bu=g:CreateWindow({
+    Title=br,
+    Icon=bs,
+    Size=UDim2.fromOffset(320,380),
+    Theme=bt,
+    Config={Accent=Color3.fromRGB(0,170,255)}
+})
+
+
+          
+local bv=bu:Tab({Title="Farm",Icon="zap"})
+bv:Toggle({Title="Auto Collect",Desc="Collect All",Callback=function(bw)o=bw end})
+bv:Toggle({Title="Auto Sell",Desc="Sell All",Callback=function(bx)p=bx end})
+bv:Toggle({Title="Auto Steal",Desc="Night time babyHahaha",Callback=function(by)q=by end})
+
+local bz=bu:Tab({Title="Shop",Icon="shopping-cart"})
+bz:Toggle({Title="Auto Buy Seeds",Callback=function(ca)l=ca end})
+bz:Dropdown({Title="Select",Multi=true,Values=bf,Default=r,Callback=function(cb)r=cb end})
+bz:Toggle({Title="Auto Buy Gears",Callback=function(cc)m=cc end})
+bz:Dropdown({Title="Select",Multi=true,Values=bg,Callback=function(cd)s=cd end})
+bz:Toggle({Title="Auto Buy Crates",Callback=function(ce)n=ce end})
+bz:Dropdown({Title="Select",Multi=true,Values=bh,Callback=function(cf)t=cf end})
+
+
+task.spawn(function()while task.wait(i)do if o then an()end end)
+task.spawn(function()while task.wait(j)do if p then au()end end)
+task.spawn(function()while task.wait(k)do if q then av()end end)
+task.spawn(function()while task.wait(h)do if l and #r>0 then ah(v,aa,r)end if m and #s>0 then ah(w,ab,s)end if n and #t>0 then ah(x,ac,t)end end)
+
+
+local cg=bu:Tab({Title="Predictor",Icon="list"})
+local ch=cg:Paragraph({Title="Hasil Prediction",Desc="Click Refress"})
+local ci=""
+local function cj(ck)ci=ci..tostring(ck).."\n"ch:SetDesc(ci)end print=cj warn=cj
+local cl=false
+cg:Button({Title="Load Weather + Moon Predictor",Icon="download",Callback=function()if not cl then cl=true cj("Grave in Here")task.spawn(function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Lutosys/opensrc/refs/heads/main/gag2weatherpredictor.lua"))()end)g:Notify({Title="Berhasil",Content="Script sudah jalan. Lihat di bagian Hasil",Duration=3})else g:Notify({Title="Info",Content="Script sudah di load",Duration=2})end end})
+cg:Button({Title="Clear Log",Icon="trash",Callback=function()ci=""ch:SetDesc("Log dihapus...")end})
+bu:SelectTab(1)g:Notify({Title="Loaded",Content="Grave Combo Loaded",Duration=3})
