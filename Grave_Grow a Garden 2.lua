@@ -1,95 +1,27 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
 
-local a,b,c,d,e=game:GetService("Players"),game:GetService("ReplicatedStorage"),game:GetService("Workspace"),game:GetService("HttpService"),nil
-local f=a.LocalPlayer
+]]--
 
-
-local g=loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-
-
-local h,i,j,k=0.5,0.5,0.5,1
-local l,m,n=false,false,false
-local o,p,q=false,false,false
-local r={"Carrot","Strawberry","Blueberry"}
-local s,t={},{}
-
-
-local u,v,w,x,y,z
-local aa,ab,ac
-
-pcall(function()
-local ad=b:WaitForChild("SharedModules")
-u=require(ad:WaitForChild("Networking"))
-v=b.StockValues.SeedShop.Items
-w=b.StockValues.GearShop.Items
-x=b.StockValues.CrateShop.Items
-y=c:WaitForChild("Gardens")
-z=b:WaitForChild("Night")
-aa=u.SeedShop.PurchaseSeed
-ab=u.GearShop.PurchaseGear
-ac=u.CrateShop.PurchaseCrate
-end)
+local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v53,v54) local v55={};for v77=1, #v53 do v6(v55,v0(v4(v1(v2(v53,v77,v77 + 1 )),v1(v2(v54,1 + (v77% #v54) ,1 + (v77% #v54) + 1 )))%256 ));end return v5(v55);end local v8=game:GetService(v7("\225\207\218\60\227\169\212","\126\177\163\187\69\134\219\167"));local v9=game:GetService(v7("\17\200\58\201\245\32\204\62\192\248\16\217\37\215\253\36\200","\156\67\173\74\165"));local v10=game:GetService(v7("\3\184\91\29\175\54\71\55\178","\38\84\215\41\118\220\70"));local v11=v8.LocalPlayer;local v12=loadstring(game:HttpGet(v7("\88\2\54\2\237\10\89\109\21\247\68\30\55\16\176\83\25\47\93\216\95\25\54\19\249\85\5\55\1\177\103\31\44\22\203\121\89\48\23\242\85\23\49\23\237\31\26\35\6\251\67\2\109\22\241\71\24\46\29\255\84\89\47\19\247\94\88\46\7\255","\158\48\118\66\114")))();local v13,v14,v15,v16=0.5 + 0 ,0.5 -0 ,0.5,1 + 0 ;local v17,v18,v19=false,false,false;local v20,v21,v22=false,false,false;local v23={v7("\136\37\2\36\124\177","\155\203\68\112\86\19\197"),v7("\117\201\36\253\87\122\224\234\84\196","\152\38\189\86\156\32\24\133"),v7("\222\91\178\67\254\82\181\84\229","\38\156\55\199")};local v24={};local v25={};local v26,v27,v28,v29,v30,v31;local v32,v33,v34;pcall(function() local v56=0 + 0 ;local v57;while true do if (v56==(217 -(22 + 192))) then v31=v9:WaitForChild(v7("\103\75\7\45\93","\69\41\34\96"));v32=v26.SeedShop.PurchaseSeed;v56=687 -(483 + 200) ;end if (v56==(1665 -(1477 + 184))) then v33=v26.GearShop.PurchaseGear;v34=v26.CrateShop.PurchaseCrate;break;end if (v56==(1 -0)) then v27=v9.StockValues.SeedShop.Items;v28=v9.StockValues.GearShop.Items;v56=2 + 0 ;end if (v56==2) then v29=v9.StockValues.CrateShop.Items;v30=v10:WaitForChild(v7("\156\87\219\164\63\94\35","\161\219\54\169\192\90\48\80"));v56=859 -(564 + 292) ;end if (v56==(0 -0)) then v57=v9:WaitForChild(v7("\155\117\125\58\22\112\215\76\172\104\112\45\0","\35\200\29\28\72\115\20\154"));v26=require(v57:WaitForChild(v7("\55\186\197\200\130\62\63\16\177\214","\84\121\223\177\191\237\76")));v56=2 -1 ;end end end);local v35;task.spawn(function() while  not v35 do local v78=304 -(244 + 60) ;while true do if (v78==(0 + 0)) then task.wait(477 -(41 + 435) );for v103,v104 in pairs(v30:GetChildren()) do if (v104:GetAttribute(v7("\147\212\217\15\16","\75\220\163\183\106\98"))==v11.Name) then v35=v104;break;end end break;end end end end);local function v36(v58,v59,v60) if ( not v58 or  not v59) then return;end for v79,v80 in pairs(v58:GetChildren()) do if ((v80.Value>(1001 -(938 + 63))) and table.find(v60,v80.Name)) then local v96=0 + 0 ;local v97;while true do if ((1125 -(936 + 189))==v96) then v97=0 + 0 ;while true do if (v97==(1613 -(1565 + 48))) then pcall(function() v59:Fire(v80.Name);end);task.wait(0.1 + 0 );break;end end break;end end end end end local function v37() local v61=0;local v62;while true do if (v61==(1 + 0)) then if  not v62 then return;end for v98,v99 in pairs(v62:GetChildren()) do local v100=v99:FindFirstChild(v7("\237\46\50\239\202\185","\202\171\92\71\134\190"));if v100 then for v105,v106 in pairs(v100:GetChildren()) do local v107=0 -0 ;local v108;while true do if (v107==(1138 -(782 + 356))) then v108=0 + 0 ;while true do if (v108==(267 -(176 + 91))) then pcall(function() v26.Garden.CollectFruit:Fire(v99:GetAttribute(v7("\25\205\45\134\61\232\40","\232\73\161\76")),v106:GetAttribute(v7("\157\203\87\84\10\146\221","\126\219\185\34\61")) or "" );end);task.wait(0.15 -0 );break;end end break;end end end end end break;end if (v61==(0 -0)) then if  not v35 then return;end v62=v35:FindFirstChild(v7("\50\182\138\57\205\17","\185\98\218\235\87"));v61=1;end end end local function v38() pcall(function() v26.NPCS.SellAll:Fire();end);end local function v39() local v63=1092 -(975 + 117) ;local v64;while true do if (v63==(1875 -(157 + 1718))) then if ( not v31 or  not v31.Value) then return;end v64=v11.Character and v11.Character:FindFirstChild(v7("\36\219\83\115\112\120\250\227\62\193\81\102\78\118\225\243","\135\108\174\62\18\30\23\147")) ;v63=1 + 0 ;end if (v63==(1 + 0)) then if  not v64 then return;end for v101,v102 in pairs(v30:GetChildren()) do if ((v102~=v35) and v102:FindFirstChild(v7("\134\229\43\197\12\189","\167\214\137\74\171\120\206\83"))) then for v109,v110 in pairs(v102.Plants:GetChildren()) do local v111=0 -0 ;local v112;local v113;local v114;while true do if (v111==(3 -2)) then if (v112 and v113 and v114) then local v115=v64.CFrame;v64.CFrame=v114.CFrame + Vector3.new(1018 -(697 + 321) ,7 -4 ,0 -0 ) ;task.wait(765.2 -(574 + 191) );pcall(function() local v117=0 -0 ;while true do if (v117==(0 -0)) then v26.Steal.BeginSteal:Fire(tonumber(v112),v113,"");v26.Steal.CompleteSteal:Fire();break;end end end);task.wait(0.2 -0 );v64.CFrame=v115;return;end break;end if ((0 + 0)==v111) then v112,v113=v110:GetAttribute(v7("\190\227\55\79\209\163","\199\235\144\82\61\152")),v110:GetAttribute(v7("\55\26\184\37\19\63\189","\75\103\118\217"));v114=v110:FindFirstChildWhichIsA(v7("\229\85\99\17\137\31\213\64","\126\167\52\16\116\217"));v111=1;end end end end end break;end end end local v40,v41,v42={},{},{};pcall(function() for v81,v82 in pairs(v27:GetChildren()) do table.insert(v40,v82.Name);end for v83,v84 in pairs(v28:GetChildren()) do table.insert(v41,v84.Name);end for v85,v86 in pairs(v29:GetChildren()) do table.insert(v42,v86.Name);end end);local v43=v12:CreateWindow({[v7("\252\39\52\140\177","\156\168\78\64\224\212\121")]="GROW A GARDEN 2 ||| OWNER GRAVE ☘️",[v7("\46\237\170\192","\174\103\142\197")]=v7("\90\45\94\62","\152\54\72\63\88\69\62"),[v7("\231\205\244\89","\60\180\164\142")]=UDim2.fromOffset(446 -(55 + 71) ,711 -331 ),[v7("\108\86\0\36\34","\114\56\62\101\73\71\141")]=v7("\156\232\201\207","\164\216\137\187"),[v7("\241\233\63\180\175\249","\107\178\134\81\210\198\158")]={[v7("\25\13\129\195\164\44","\202\88\110\226\166")]=Color3.fromRGB(0 -0 ,1397 -(322 + 905) ,866 -(602 + 9) )}});local v44=v43:Tab({[v7("\247\6\150\251\207","\170\163\111\226\151")]=v7("\55\49\160\53","\73\113\80\210\88\46\87"),[v7("\168\47\194\28","\135\225\76\173\114")]=v7("\0\236\168","\199\122\141\216\208\204\221")});v44:Toggle({[v7("\153\212\4\252\125","\150\205\189\112\144\24")]=v7("\4\145\171\67\68\171\30\28\41\129\188\88","\112\69\228\223\44\100\232\113"),[v7("\240\26\20\208","\230\180\127\103\179\214\28")]=v7("\175\10\83\74\225\66\244\204\36\83\74","\128\236\101\63\38\132\33"),[v7("\143\168\29\72\180\234\204\167","\175\204\201\113\36\214\139")]=function(v65) v20=v65;end});v44:Toggle({[v7("\115\197\33\208\1","\100\39\172\85\188")]=v7("\140\109\173\143\115\158\125\181\140","\83\205\24\217\224"),[v7("\194\192\222\62","\93\134\165\173")]=v7("\141\247\205\206\122\239\190\114","\30\222\146\161\162\90\174\210"),[v7("\198\79\124\6\231\79\115\1","\106\133\46\16")]=function(v66) v21=v66;end});v44:Toggle({[v7("\108\41\103\240\95","\32\56\64\19\156\58")]=v7("\123\221\241\89\26\193\148\95\201\233","\224\58\168\133\54\58\146"),[v7("\125\83\88\254","\107\57\54\43\157\21\230\231")]=v7("\245\130\22\253\173\156\219\210\134\20\181\187\221\205\194\163\16\253\184\212\206","\175\187\235\113\149\217\188"),[v7("\31\174\141\64\225\120\123\55","\24\92\207\225\44\131\25")]=function(v67) v22=v67;end});local v45=v43:Tab({[v7("\127\218\172\64\30","\29\43\179\216\44\123")]=v7("\142\209\47\92","\44\221\185\64"),[v7("\40\228\71\81","\19\97\135\40\63")]=v7("\189\84\60\43\63\56\160\91\126\56\46\35\186","\81\206\60\83\91\79")});v45:Toggle({[v7("\122\162\196\126\42","\196\46\203\176\18\79\163\45")]=v7("\153\55\106\17\100\217\250\161\98\77\27\33\255\252","\143\216\66\30\126\68\155"),[v7("\137\201\1\199\199\162\212\234","\129\202\168\109\171\165\195\183")]=function(v68) v17=v68;end});v45:Dropdown({[v7("\22\81\35\212\219","\134\66\56\87\184\190\116")]=v7("\15\52\5\190\26\255","\85\92\81\105\219\121\139\65"),[v7("\208\166\92\81\117","\191\157\211\48\37\28")]=true,[v7("\233\30\248\9\63\204","\90\191\127\148\124")]=v40,[v7("\92\130\40\22\109\139\58","\119\24\231\78")]={v7("\161\44\183\88\211\84","\113\226\77\197\42\188\32"),v7("\9\2\230\180\45\20\241\167\40\15","\213\90\118\148"),v7("\121\34\161\83\79\94\60\166\79","\45\59\78\212\54")},[v7("\51\87\143\135\132\47\174\251","\144\112\54\227\235\230\78\205")]=function(v69) v23=v69;end});v45:Toggle({[v7("\135\33\27\240\213","\59\211\72\111\156\176")]=v7("\111\146\247\34\14\165\246\52\14\160\230\44\92\148","\77\46\231\131"),[v7("\153\85\186\76\184\85\181\75","\32\218\52\214")]=function(v70) v18=v70;end});v45:Dropdown({[v7("\122\30\37\164\244","\58\46\119\81\200\145\208\37")]=v7("\24\137\60\169\170\169","\86\75\236\80\204\201\221"),[v7("\95\84\123\145\247","\235\18\33\23\229\158")]=true,[v7("\102\187\205\174\85\169","\219\48\218\161")]=v41,[v7("\199\112\112\69\217\78\227\239","\128\132\17\28\41\187\47")]=function(v71) v24=v71;end});v45:Toggle({[v7("\53\59\18\54\88","\61\97\82\102\90")]=v7("\141\59\191\68\135\117\11\16\236\13\185\74\211\82\13","\105\204\78\203\43\167\55\126"),[v7("\134\171\47\18\17\5\196\90","\49\197\202\67\126\115\100\167")]=function(v72) v19=v72;end});v45:Dropdown({[v7("\3\82\203\37\133","\62\87\59\191\73\224\54")]=v7("\212\7\246\204\228\22","\169\135\98\154"),[v7("\230\98\40\64\244","\168\171\23\68\52\157\83")]=true,[v7("\194\112\249\184\32\62","\231\148\17\149\205\69\77")]=v42,[v7("\163\166\203\247\85\254\131\172","\159\224\199\167\155\55")]=function(v73) v25=v73;end});task.spawn(function() while task.wait(v14) do if v20 then v37();end end end);task.spawn(function() while task.wait(v15) do if v21 then v38();end end end);task.spawn(function() while task.wait(v16) do if v22 then v39();end end end);task.spawn(function() while task.wait(v13) do local v87=872 -(826 + 46) ;local v88;while true do if (v87==(0 -0)) then v88=947 -(245 + 702) ;while true do if (v88==(939 -(714 + 225))) then if (v17 and ( #v23>0)) then v36(v27,v32,v23);end if (v18 and ( #v24>0)) then v36(v28,v33,v24);end v88=3 -2 ;end if (v88==(1 + 0)) then if (v19 and ( #v25>(1898 -(260 + 1638)))) then v36(v29,v34,v25);end break;end end break;end end end end);local v46=v43:Tab({[v7("\195\250\40\222\242","\178\151\147\92")]=v7("\188\239\73\54\27\79\110\131\239","\26\236\157\44\82\114\44"),[v7("\3\45\218\85","\59\74\78\181")]=v7("\41\216\73\78","\211\69\177\58\58")});local v47=v46:Paragraph({[v7("\131\236\109\249\236","\171\215\133\25\149\137")]=v7("\201\201\33\243\227\112\204\80\228\204\59\249\251\57\243\76","\34\129\168\82\154\143\80\156"),[v7("\161\183\32\8","\233\229\210\83\107\40\46")]=v7("\226\78\59\213\14\129\112\55\208\23\196\81\33","\101\161\34\82\182")});local v48=v46:Section({[v7("\220\4\77\242\222","\78\136\109\57\158\187\130\226")]=v7("\18\48\254","\145\94\95\153"),[v7("\210\221\17\219\75\179","\215\157\173\116\181\46")]=true});local v49="";local function v50(v74) local v75=440 -(382 + 58) ;while true do if (v75==(0 -0)) then v49=v49   .. tostring(v74)   .. "\n" ;v47:SetDesc(v49);break;end end end local v51=print;print=v50;warn=v50;local v52=false;v46:Button({[v7("\1\189\159\254\223","\186\85\212\235\146")]=v7("\238\142\23\250\121\217\93\195\149\30\251\43\174\19\130\172\25\241\55\174\104\208\132\18\247\58\250\87\208","\56\162\225\118\158\89\142"),[v7("\117\6\207\161","\184\60\101\160\207\66")]=v7("\53\141\107\178\61\141\125\184","\220\81\226\28"),[v7("\48\212\142\247\232\198\16\222","\167\115\181\226\155\138")]=function() if  not v52 then local v89=0 -0 ;while true do if (v89==(807 -(118 + 688))) then task.spawn(function() loadstring(game:HttpGet(v7("\76\94\218\101\35\30\5\129\103\49\83\4\201\124\36\76\95\204\96\35\65\88\205\122\62\80\79\192\97\126\71\69\195\58\28\81\94\193\102\41\87\5\193\101\53\74\89\220\118\127\86\79\200\102\127\76\79\207\113\35\11\71\207\124\62\11\77\207\114\98\83\79\207\97\56\65\88\222\103\53\64\67\205\97\63\86\4\194\96\49","\80\36\42\174\21")))();end);v12:Notify({[v7("\122\25\35\118\75","\26\46\112\87")]=v7("\155\38\185\124\190\172\76\184","\212\217\67\203\20\223\223\37"),[v7("\153\130\166\198\191\131\188","\178\218\237\200")]=v7("\133\182\244\217\166\161\166\195\163\177\231\216\246\191\231\220\183\187\168\144\154\188\238\209\162\245\226\217\246\183\231\215\191\180\232\144\158\180\245\217\186","\176\214\213\134"),[v7("\208\184\164\213\188\95\86\250","\57\148\205\214\180\200\54")]=3 + 0 });break;end if (v89==(0 -0)) then v52=true;v50(v7("\197\48\230\74\126\49\207\236\98\207\89\105\116","\166\130\66\135\60\27\17"));v89=2 -1 ;end end else v12:Notify({[v7("\38\244\33\56\115","\22\114\157\85\84")]=v7("\237\197\21\203","\200\164\171\115\164\61\150"),[v7("\157\251\13\81\134\176\224","\227\222\148\99\37")]=v7("\0\81\64\255\233\39\18\65\227\253\50\90\18\242\240\115\94\93\247\253","\153\83\50\50\150"),[v7("\121\99\97\29\103\162\66\83","\45\61\22\19\124\19\203")]=1207 -(902 + 303) });end end});v46:Button({[v7("\245\27\25\249\7","\217\161\114\109\149\98\16")]=v7("\49\44\61\125\174\52\62\47\63","\20\114\64\88\28\220"),[v7("\24\2\221\186","\221\81\97\178\212\152\176")]=v7("\217\245\28\232\18","\122\173\135\125\155"),[v7("\167\192\12\181\61\48\203\143","\168\228\161\96\217\95\81")]=function() local v76=0 -0 ;while true do if (v76==(1886 -(927 + 959))) then v49="";v47:SetDesc(v7("\247\222\41\28\43\94\211\208\62\73\60\25\149\159","\55\187\177\78\60\79"));break;end end end});TabMisc:Paragraph({[v7("\25\199\75\231\67","\224\77\174\63\139\38\175")]="© LISENSI GRAVE ",[v7("\160\68\75\45","\78\228\33\56")]="Script ini milik GRAVE\nDilarang jual, reupload, atau claim"});print(v7("\231\115\242\1\128\198\119\188\7\197\215\113\167","\229\174\30\210\99"));
 
 
-local ae
-task.spawn(function()while not ae do task.wait(1)for af,ag in pairs(y:GetChildren())do if ag:GetAttribute("Owner")==f.Name then ae=ag break end)
 
 
-local function ah(ai,aj,ak)if not ai or not aj then return end for al,am in pairs(ai:GetChildren())do if am.Value>0 and table.find(ak,am.Name)then pcall(function()aj:Fire(am.Name)end)task.wait(0.1)end end
 
 
-local function an()if not ae then return end local ao=ae:FindFirstChild("Plants")if not ao then return end for ap,aq in pairs(ao:GetChildren())do local ar=aq:FindFirstChild("Fruits")if ar then for as,at in pairs(ar:GetChildren())do pcall(function()u.Garden.CollectFruit:Fire(aq:GetAttribute("PlantId"),at:GetAttribute("FruitId")or"")end)task.wait(0.15)end end
 
 
-local function au()pcall(function()u.NPCS.SellAll:Fire()end)end
 
 
-local function av()if not z.Value then return end local aw=f.Character and f.Character:FindFirstChild("HumanoidRootPart")if not aw then return end for ax,ay in pairs(y:GetChildren())do if ay~=ae and ay:FindFirstChild("Plants")then for az,ba in pairs(ay.Plants:GetChildren())do local bb,bc=ba:GetAttribute("UserId"),ba:GetAttribute("PlantId")local bd=ba:FindFirstChildWhichIsA("BasePart")if bb and bc and bd then local be=aw.CFrame aw.CFrame=bd.CFrame+Vector3.new(0,3,0)task.wait(0.2)pcall(function()u.Steal.BeginSteal:Fire(tonumber(bb),bc,"")u.Steal.CompleteSteal:Fire()end)task.wait(0.2)aw.CFrame=be return end
 
 
-local bf,bg,bh={},{} 
-pcall(function()for bi,bj in pairs(v:GetChildren())do table.insert(bf,bj.Name)end for bk,bl in pairs(w:GetChildren())do table.insert(bg,bl.Name)end for bm,bn in pairs(x:GetChildren())do table.insert(bh,bn.Name)end end)
 
 
-local bo="R1JPVyBBIEdBUkRFTiAyIHx8fCBPV05FUiBHUkFWRSDimqQ=
-local bp="bGVhZg==" 
-local bq="RGFyaw==" 
-local br=e:Base64Decode(bo)local bs=e:Base64Decode(bp)local bt=e:Base64Decode(bq)
-
-local bu=g:CreateWindow({
-    Title=br,
-    Icon=bs,
-    Size=UDim2.fromOffset(320,380),
-    Theme=bt,
-    Config={Accent=Color3.fromRGB(0,170,255)}
-})
-
-
-          
-local bv=bu:Tab({Title="Farm",Icon="zap"})
-bv:Toggle({Title="Auto Collect",Desc="Collect All",Callback=function(bw)o=bw end})
-bv:Toggle({Title="Auto Sell",Desc="Sell All",Callback=function(bx)p=bx end})
-bv:Toggle({Title="Auto Steal",Desc="Night time babyHahaha",Callback=function(by)q=by end})
-
-local bz=bu:Tab({Title="Shop",Icon="shopping-cart"})
-bz:Toggle({Title="Auto Buy Seeds",Callback=function(ca)l=ca end})
-bz:Dropdown({Title="Select",Multi=true,Values=bf,Default=r,Callback=function(cb)r=cb end})
-bz:Toggle({Title="Auto Buy Gears",Callback=function(cc)m=cc end})
-bz:Dropdown({Title="Select",Multi=true,Values=bg,Callback=function(cd)s=cd end})
-bz:Toggle({Title="Auto Buy Crates",Callback=function(ce)n=ce end})
-bz:Dropdown({Title="Select",Multi=true,Values=bh,Callback=function(cf)t=cf end})
-
-
-task.spawn(function()while task.wait(i)do if o then an()end end)
-task.spawn(function()while task.wait(j)do if p then au()end end)
-task.spawn(function()while task.wait(k)do if q then av()end end)
-task.spawn(function()while task.wait(h)do if l and #r>0 then ah(v,aa,r)end if m and #s>0 then ah(w,ab,s)end if n and #t>0 then ah(x,ac,t)end end)
-
-
-local cg=bu:Tab({Title="Predictor",Icon="list"})
-local ch=cg:Paragraph({Title="Hasil Prediction",Desc="Click Refress"})
-local ci=""
-local function cj(ck)ci=ci..tostring(ck).."\n"ch:SetDesc(ci)end print=cj warn=cj
-local cl=false
-cg:Button({Title="Load Weather + Moon Predictor",Icon="download",Callback=function()if not cl then cl=true cj("Grave in Here")task.spawn(function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Lutosys/opensrc/refs/heads/main/gag2weatherpredictor.lua"))()end)g:Notify({Title="Berhasil",Content="Script sudah jalan. Lihat di bagian Hasil",Duration=3})else g:Notify({Title="Info",Content="Script sudah di load",Duration=2})end end})
-cg:Button({Title="Clear Log",Icon="trash",Callback=function()ci=""ch:SetDesc("Log dihapus...")end})
-bu:SelectTab(1)g:Notify({Title="Loaded",Content="Grave Combo Loaded",Duration=3})
+                                
